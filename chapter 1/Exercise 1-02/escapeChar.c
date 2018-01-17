@@ -8,5 +8,5 @@ main()
     printf("hello double quote \" \n");
     printf("backslash \\ \n");
     printf("e \e \n");
-    printf("v \v ss \n");
+    printf("new line \v and continue at same space \n");
 }
