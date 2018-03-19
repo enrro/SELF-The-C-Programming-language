@@ -1,1 +1,16 @@
 *.exe
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+### C ###
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
