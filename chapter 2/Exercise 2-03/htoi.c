@@ -10,7 +10,7 @@ int main()
     int len;
     char line[MAX_LINE];
     
-    while(len = getlinee(line, MAX_LINE) >0)
+    while((len = getlinee(line, MAX_LINE)) >0)
         printf("%lu\n", htoi(line));
     
 
@@ -24,7 +24,6 @@ int getlinee(char line[],int maxline){
     for (i = 0, l = 0; (c = getchar()) != EOF && c != '\n'; ++i)
         if (i < maxline - 1)
             line[l++] = c;
-            printf("%d %d", i, l);
     // if (c == '\n' && l < lim - 1)
     //      s[l++] = c;
     line[l] = '\0';
