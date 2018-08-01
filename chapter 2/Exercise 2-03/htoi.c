@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAX_LINE 2000
 
-int getline(char line[],int maxline);
+int getlinee(char line[], int maxline);
 unsigned long htoi(char s[]);
 
 
@@ -10,20 +10,23 @@ int main()
     int len;
     char line[MAX_LINE];
     
-    while(len = getLine(line, MAX_LINE) >0)
-        printf("%ul\n", htoi(line));
+    while(len = getlinee(line, MAX_LINE) >0)
+        printf("%lu\n", htoi(line));
     
 
     return 0;
 }
 
 
-int getline(char line[],int maxline){
+int getlinee(char line[],int maxline){
     int c, i, l;
 
     for (i = 0, l = 0; (c = getchar()) != EOF && c != '\n'; ++i)
         if (i < maxline - 1)
             line[l++] = c;
+            printf("%d %d", i, l);
+    // if (c == '\n' && l < lim - 1)
+    //      s[l++] = c;
     line[l] = '\0';
 
     return l;
